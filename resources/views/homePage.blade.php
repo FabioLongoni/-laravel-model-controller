@@ -3,17 +3,20 @@
 @section('metaTitle','My-Movies');
 
 @section('content')
-  <div class="container">
-    @foreach ($movies as $movie)
+  @foreach ($movies as $movie)
+  <a href="">
+    <div class="container"> 
       <div class="info__sx">
-        <h2>{{$movie->title}}</h2>
-        <h3>{{$movie->original_title}}</h3>
+        <h2>Title : {{$movie->title}}</h2>
+        <h3>Original title : {{$movie->original_title}}</h3>
       </div>
       <div class="info__dx">
-        <p>{{$movie->nationality}}</p>
-        <p>{{$movie->vote}}</p>
-        <p>{{$movie->date}}</p>
-      </div>     
-    @endforeach
-  </div>
+        <p>Nationality : {{$movie->nationality}}</p>
+        <p>Vote : {{$movie->vote}}</p>
+        <p>Date : {{$movie->date}}</p>
+      </div>         
+    </div>    
+  </a>
+  @endforeach
+    
 @endsection
