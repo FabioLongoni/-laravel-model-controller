@@ -4,7 +4,7 @@
 
 @section('content')
   @foreach ($movies as $movie)
-  <a href="">
+  <a href="{{route('movies.show',$movie)}}">
     <div class="container"> 
       <div class="info__sx">
         <h2>Title : {{$movie->title}}</h2>
