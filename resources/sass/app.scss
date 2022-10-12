@@ -9,16 +9,18 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(153, 138, 138);
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 1rem;
-  border: 1px solid black;
   display: flex; 
-  padding: 1rem;
+  padding: 3rem;
   justify-content: space-around;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.40);
+  color: rgb(153, 138, 138);
 }
 
 a {
